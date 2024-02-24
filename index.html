@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--grey-bg);
+            color: #000000;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --teal: #185ADB;
+            --light-teal: #C0D8E0;
+            --grey-bg: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: var(--teal);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            margin: 0 0.5rem;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: var(--teal);
+        }
+
+        .navbar .logo {
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: 2rem;
+            color: white;
+        }
+
+        .main-content {
+            background-color: var(--grey-bg);
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 8px;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        footer.footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #fff;
+        }
+
+        .about-me {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 1em;
+        }
+
+        .about-me img {
+            max-width: 30%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .about-me-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .about-me-content h2 {
+            margin-bottom: 0.5em;
+        }
+
+        .about-me-content p {
+            margin-top: 0;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .download-buttons a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        .skills-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .skill-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill-card img {
+            max-width: 100%;
+            max-height: 80px;
+            object-fit: contain;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            list-style: none;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 15px;
+            width: 2px;
+            background: #d4d9df;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            border-radius: 50%;
+            border: 2px solid #3498db;
+        }
+
+        .timeline-content {
+            padding-left: 40px;
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .timeline-content p {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .skills-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-me {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-me img {
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Noussaira Rezig</div>
+    <a href="index.html">Accueil</a>
+    <a href="veilletechnologique.html">Veille Technologique</a>
+    <a href="formation.html">Formation</a>
+    <a href="projets.html">Projets E5</a>
+</nav>
+<main class="main-content">
+    <div class="about-me">
+        <img src="img/ordi.jpg" alt="Illustration">
+        <div class="about-me-content">
+            <h2>À propos de moi</h2>
+            <p>Je m'appelle Noussaira Rezig et je suis actuellement en deuxième année de BTS SIO (services informatiques aux organisations) option SLAM (solutions logicielles applications métiers) au lycée Robert Schuman à Dugny (93200). Je poursuis également mon parcours en tant qu'alternante chez Phoenix Alliance, une entreprise spécialisée dans les services informatiques cloud. Cette expérience en alternance me permet de combiner la théorie acquise en cours avec la pratique professionnelle, ce qui est pour moi essentiel afin d'intégrer efficacement les connaissances et compétences nécessaires. Après l'obtention de mon BTS, mon objectif est de continuer mes études en informatique, toujours en suivant le modèle de l'alternance.</p>
+            <div class="download-buttons">
+                <a href="img/CV_Noussaira_Rezig.pdf" download="CV_Noussaira_Rezig.pdf">Télécharger CV</a>
+                <a href="img/Fiche_Competences_Noussaira_Rezig.pdf" download="Fiche_Competences_Noussaira_Rezig.pdf">Télécharger Fiche Compétence</a>
+            </div>
+        </div>
+    </div>
+    <h2>Mes compétences</h2>
+    <div class="skills-section">
+        <div class="skill-card">
+            <img src="img/azure.jpg" alt="Azure">
+        </div>
+        <div class="skill-card">
+            <img src="img/git.jpg" alt="Git">
+        </div>
+        <div class="skill-card">
+            <img src="img/html.jpg" alt="HTML5">
+        </div>
+        <div class="skill-card">
+            <img src="img/css3.jpg" alt="CSS3">
+        </div>
+        <div class="skill-card">
+            <img src="img/hyperv.jpg" alt="Hyper-V">
+        </div>
+        <div class="skill-card">
+            <img src="img/java.jpg" alt="Java">
+        </div>
+        <div class="skill-card">
+            <img src="img/laravel.jpg" alt="Laravel">
+        </div>
+        <div class="skill-card">
+            <img src="img/mysql.jpg" alt="MySQL">
+        </div>
+        <div class="skill-card">
+            <img src="img/office.jpg" alt="Office">
+        </div>
+        <div class="skill-card">
+            <img src="img/php.jpg" alt="PHP">
+        </div>
+        <div class="skill-card">
+            <img src="img/python.jpg" alt="Python">
+        </div>
+        <div class="skill-card">
+            <img src="img/symfony.jpg" alt="Symfony">
+        </div>
+    </div>
+    <h2>Mon parcours scolaire</h2>
+    <ul class="timeline">
+        <li class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>BTS SIO (Système informatique aux organisations) option SLAM (solutions logicielles et applications métiers)</h3>
+                <p>Lycée Robert Schuman, Dugny, 93440<br>
+                Depuis septembre 2022</p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Licence d'histoire</h3>
+                <p>Université Paris 1 Sorbonne, Paris 75005<br>
+                De septembre 2020 à juin 2022</p>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Baccalauréat général littéraire (section européenne)</h3>
+                <p>Lycée François Couperin, Fontainebleau 77300 <br>
+                    De septembre 2017 à juin 2020
+                    </p>
+            </div>
+        </li>
+    </ul>
+    <h2>Mon parcours professionnel</h2>
+    <ul class="timeline">
+        <li class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Consultant cloud (alternance)</h3>
+                <p>Phoenix Alliance, Gennevilliers, 92230<br>
+                    Depuis novembre 2023</p>
+                <ul>
+                    <li>Accompagnement des clients dans leur transition vers des solutions cloud Microsoft.</li>
+                    <li>Migration d'Active Directory on-premise vers Azure AD.</li>
+                    <li>Gestion de tickets via Dynamics 365.</li>
+                    <li>Utilisation d'Intune pour l'enrôlement des dispositifs et la surveillance du bon fonctionnement des appareils.</li>
+                    <li>Veille technologique pour rester informé des mise à jour microsoft.</li>
+                    <li>Scripting powershell.</li>
+                </ul>
+            </div>
+        </li>
+        <li class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+                <h3>Technicien réseau (stage)</h3>
+                <p>Toyota Material Handling, Bussy Saint-Georges, 77130<br>
+                    Du 22 mai au 24 juin 2023</p>
+                <ul>
+                    <li>Préparation et dépannage PC.</li>
+                    <li>Audit des applications IT.</li>
+                    <li>Résolution des ticket au niveau local.</li>
+                    <li>Contribution à la réalisation d'une application de gestion de projet avec la PowerPlatform (PowerApps).</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</main>
+<footer class="footer">
+    <p>Portfolio Noussaira Rezig</p>
+</footer>
+</body>
+</html>

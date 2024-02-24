@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation - BTS SIO</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--grey-bg);
+            color: #000000;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --teal: #185ADB;
+            --light-teal: #C0D8E0;
+            --grey-bg: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: var(--teal);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            margin: 0 0.5rem;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: var(--teal);
+        }
+
+        .navbar .logo {
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: 2rem;
+            color: white;
+        }
+
+        .main-content {
+            background-color: var(--grey-bg);
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 8px;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        footer.footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #fff;
+        }
+
+        .info-cards {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            margin: 20px -10px; /* Adjustment for negative margin on cards */
+        }
+
+        .card {
+            padding: 20px;
+            flex: 1; /* Distribute space evenly between cards */
+            margin: 10px; /* Horizontal and Vertical space between cards */
+            border-radius: 15px; /* Rounded borders */
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for all cards */
+            background-color: #fff; /* Background color for cards */
+        }
+
+        .card h3 {
+            border-bottom: 2px solid var(--teal); /* Line under the title */
+            padding-bottom: 10px; /* Space under the title */
+            margin-bottom: 20px; /* Space before the list */
+        }
+
+        .card ul {
+            list-style: none; /* No bullets */
+            padding: 0; /* No padding */
+            margin: 0; /* No margin */
+        }
+
+        .card ul li {
+            padding: 5px 0; /* Space around list items */
+        }
+
+        @media (max-width: 768px) {
+            .info-cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Noussaira Rezig</div>
+    <a href="index.html">Accueil</a>
+    <a href="veilletechnologique.html">Veille Technologique</a>
+    <a href="formation.html">Formation</a>
+    <a href="projets.html">Projets E5</a>
+</nav>
+<main class="main-content">
+    <h2>Présentation formation : BTS SIO</h2>
+    <p>Le BTS SIO, abréviation de "Sciences et Technologies de l'Informatique et de l'Organisation," est une formation de deux ans qui prépare les étudiants à travailler dans le domaine de l'informatique et des systèmes d'information au sein d'une entreprise. Cette formation est conçue pour fournir aux étudiants des compétences techniques solides ainsi qu'une compréhension approfondie des enjeux liés à l'organisation des systèmes d'information. Le BTS SIO propose deux options différentes : SISR (Solutions d'Infrastructure, Systèmes et Réseaux) et SLAM (Solutions Logicielles et Applications Métiers).</p>
+
+    <h2>Option A – S.I.S.R : Solutions d’infrastructure, systèmes et réseaux</h2>
+    <h3>OBJECTIFS DE LA FORMATION</h3>
+    <p>Le titulaire du BTS SIO, Spécialité « Solutions d’infrastructure, systèmes et réseaux » est chargé d’installer, d’administrer et gérer la maintenance des équipements et des réseaux informatiques. Les principaux objectifs de ce BTS sont de préparer, dans les meilleures conditions, l’insertion professionnelle des futurs diplômés, d'acquérir des compétences en administration systèmes et réseaux, cybersécurité, et d'offrir de réelles possibilités de poursuite d’études après le BTS.</p>
+
+    <div class="info-cards">
+        <div class="card first-card">
+            <h3>Les compétences visées</h3>
+            <ul>
+                <li>Support et mise à disposition de services informatiques</li>
+                <li>Solutions d’infrastructure, systèmes et réseaux</li>
+                <li>Culture générale et expression</li>
+                <li>Expression et communication en langue anglaise</li>
+                <li>Mathématiques pour l’informatique</li>
+                <li>Culture économique, juridique et managériale pour l’informatique</li>
+            </ul>
+        </div>
+
+        <div class="card second-card">
+            <h3>Les débouchés professionnels</h3>
+            <ul>
+                <li>Administrateur systèmes et réseaux</li>
+                <li>Informaticien support et déploiement</li>
+                <li>Pilote d’exploitation</li>
+            </ul>
+        </div>
+
+        <div class="card third-card">
+            <h3>Les poursuites d’études</h3>
+            <ul>
+                <li>Licence informatique en réseau</li>
+                <li>Licence professionnelle informatique</li>
+                <li>École d’informatique (ESGI, SUP DE VINCI, INSA)</li>
+                <li>École d’ingénieur en informatique</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Option B – S.L.A.M : Solutions logicielles et Applications Métiers</h2>
+    <h3>OBJECTIFS DE LA FORMATION</h3>
+    <p>Le titulaire du BTS SIO, Spécialité « Solutions logicielles et applications métiers » est chargé de définir des spécifications techniques à partir des besoins des utilisateurs et des contraintes de l’organisation. Il intervient dans la réalisation ou l’adaptation puis la validation de solutions applicatives à l’aide des environnements de développement. Les principaux objectifs de ce BTS sont de préparer l’insertion professionnelle des futurs diplômés, d'acquérir des compétences en développement d’applications, gestion de base de donnée, développement web, administration réseaux, cyber sécurité, et d'offrir de réelles possibilités de poursuite d’études.</p>
+
+    <div class="info-cards">
+        <div class="card first-card">
+            <h3>Les compétences visées</h3>
+            <ul>
+                <li>Support et mise à disposition de services informatiques</li>
+                <li>Solutions logicielles et applications métiers</li>
+                <li>Culture générale et expression</li>
+                <li>Expression et communication en langue anglaise</li>
+                <li>Mathématiques pour l’informatique</li>
+                <li>Culture économique, juridique et managériale pour l’informatique</li>
+            </ul>
+        </div>
+
+        <div class="card second-card">
+            <h3>Les débouchés professionnels</h3>
+            <ul>
+                <li>Analyste d’applications</li>
+                <li>Programmeur analyste</li>
+                <li>Analyste d’études</li>
+            </ul>
+        </div>
+
+        <div class="card third-card">
+            <h3>Les poursuites d’études</h3>
+            <ul>
+                <li>Licence informatique en développement</li>
+                <li>Licence professionnelle informatique</li>
+                <li>École d’informatique (ESGI, SUP DE VINCI, INSA)</li>
+                <li>École d’ingénieur en informatique</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>Portfolio Noussaira Rezig</p>
+</footer>
+</body>
+</html>

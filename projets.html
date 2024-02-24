@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet PPE LPRS</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--grey-bg);
+            color: #000000;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --teal: #185ADB;
+            --light-teal: #C0D8E0;
+            --grey-bg: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: var(--teal);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: background-color 0.3s;
+            margin: 0 0.5rem;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: var(--teal);
+        }
+
+        .navbar .logo {
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: 2rem;
+            color: white;
+        }
+
+        .main-content {
+            background-color: var(--grey-bg);
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 8px;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        footer.footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #fff;
+        }
+
+        a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Noussaira Rezig</div>
+    <a href="index.html">Accueil</a>
+    <a href="veilletechnologique.html">Veille Technologique</a>
+    <a href="formation.html">Formation</a>
+    <a href="projets.html">Projets E5</a>
+</nav>
+<main class="main-content">
+    <h2>Projets E5</h2>
+    <h3>Projet PHP: Développement d’une plateforme de gestion d’évènement et de rendez-vous entre entreprises et étudiants</h3>
+    <p>Dans le cadre de l'épreuve E5 du BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers (SLAM), nous avons développé une plateforme web visant à faciliter les interactions entre étudiants et entreprises. Ce projet permet non seulement d'appliquer les compétences en développement web, base de données, et sécurité informatique acquises durant notre formation, mais aussi de répondre à un besoin concret de mise en relation professionnelle.</p>
+    <p>Le cahier des charges détaille les fonctionnalités attendues, les critères de performance et les contraintes de sécurité, notamment le respect du RGPD.</p>
+    <a href="img/projetphp.pdf" download="projetphp.pdf">Télécharger le cahier des charges</a>
+    <br><br>
+    <a href="https://github.com/nrezig/MKN_LPRS" target="_blank">Accéder au projet sur GitHub</a>
+</main>
+<footer class="footer">
+    <p>Portfolio Noussaira Rezig</p>
+</footer>
+</body>
+</html>
